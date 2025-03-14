@@ -56,3 +56,35 @@ All of them are stored as markup inside docx file. You can easily find them at *
     </m:oMath>
 ```
 So we can just extract the equation markup and convert it into LaTeX.
+</br></br>
+
+## How to use
+
+- Clone the repo
+
+```bash
+git clone https://github.com/anishhguptaa/docx-equations.git
+cd docx-equations
+```
+
+
+- Create a virtual environment (Python 3.7 recommended)
+
+```bash
+python3.7 -m venv venv
+source venv/Scripts/activate
+```
+
+
+- Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+
+- Add the `.docx` filename in the `main.py` file and run the code
+
+```bash
+python main.py
+```

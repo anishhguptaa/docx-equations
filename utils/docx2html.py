@@ -44,6 +44,8 @@ def convert_to_html(docx_filename):
     new_docx_filename = pre_process_docx(docx_filename)
     res = mammoth.convert_to_html(new_docx_filename)
 
+    os.remove(new_docx_filename)
+
     name_ext = list(os.path.splitext(docx_filename))
     name_ext[1] = '.html'
     html_filename = ''.join(name_ext)
